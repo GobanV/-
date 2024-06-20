@@ -11,7 +11,6 @@ chars = ['N', 'E', 'R', 'O']
 target = np.asfarray(target)
 target[target == 0] = -1
 
-# Create and train network
 net = nl.net.newhop(target)
 output = net.sim(target)
 print("Test on train samples:")
